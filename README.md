@@ -36,7 +36,7 @@ This Node.js application has the following prerequisites:
 ```node app```
 
 Open in browser per URL in Node standard out, you should see something that looks like the screenshot below:
-![SparkPost and IBM Bluemix PoC](http://sparkpostbluemixt.mybluemix.net/images/sparkybluemix.png)
+![SparkPost and IBM Bluemix PoC](/public/images/sparkybluemix.png)
 
 ## DEPLOY APP TO IBM Bluemix using Cloud Foundry, follow directions for [IBM Bluemix](https://www.ng.bluemix.net/docs)
 
