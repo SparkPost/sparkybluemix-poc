@@ -1,5 +1,7 @@
 # Sparkpost IBM Bluemix PoC
 
+##THIS CODE IS GIVEN AS-IS AND ONLY FOR PROOF OF CONCEPT PURPOSES. USE AT YOUR OWN RISK
+
 This Node.js application has the following prerequisites:
 
 1. You have an IBM Bluemix account (using Cloud Foundry)
