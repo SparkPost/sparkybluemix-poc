@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>IBM Bluemix NodeJS Starter Application using Sparkpost.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td style= "width:30%;">
+          <img class = "newappIcon" src="images/newapp-icon.png">
+        <td>
+            <h1>Hi there!</h1>
+            <p>
+              Send me a welcome email: <input name="rcptEmail" id="rcptEmail" value="" />
+            </p>
+            <p>
+              <input id="sendWelcome" type="submit" value="Welcome Me" />
+            </p>
+    </table>
+    <script type="text/javascript">
+      $(function() {
+        console.log( 'jQuery should be loaded now' );
+        
+        // Handle the click event
+        $('#sendWelcome').on('click', function( evt ) {
+          console.log( 'EVT: ', evt );
+          // Cache the input from the email
+          var $rcptEmail = $('#rcptEmail').val();
+
+          // Proxy the request to protect the keys
+          $.ajax({
+            type: 'POST',
+            url: '/sparkpost',
+            data: {
+              rcptEmail: $rcptEmail
+            }
+          }).done(function(msg) {
+            $('h1').text('Check your email, you have been welcomed!');
+            console.log( 'DONE MSG: ', msg );
+          }).fail(function( xhr, textStatus ) {
+            console.log( 'FAILURE: ', textStatus );
+            console.log( 'XHR: ', xhr );
+          });
+        });
+      });
+    </script>
+  </body>
+
+</html>
