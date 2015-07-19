@@ -2,6 +2,8 @@
 
 ##THIS CODE IS GIVEN AS-IS AND ONLY FOR PROOF OF CONCEPT PURPOSES. USE AT YOUR OWN RISK
 
+Here is a running demo: [http://sparkpostbluemixt.mybluemix.net/](http://sparkpostbluemixt.mybluemix.net/)
+
 This Node.js application has the following prerequisites:
 
 
@@ -13,6 +15,7 @@ This Node.js application has the following prerequisites:
 
 
 ## Clone the repository
+```git clone https://github.com/SparkPost/sparkybluemix-poc.git```
 
 ## EDIT THESE FILES BEFORE TRYING TO DEPLOY TO CLOUD FOUNDRY
 
@@ -32,7 +35,8 @@ This Node.js application has the following prerequisites:
 ## Test locally
 ```node app```
 
-Open in browser per URL in Node standard out
+Open in browser per URL in Node standard out, you should see something that looks like the screenshot below:
+![SparkPost and IBM Bluemix PoC](http://sparkpostbluemixt.mybluemix.net/images/sparkybluemix.png)
 
 ## DEPLOY APP TO IBM Bluemix using Cloud Foundry, follow directions for [IBM Bluemix](https://www.ng.bluemix.net/docs)
 
