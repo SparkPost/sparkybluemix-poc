@@ -4,11 +4,13 @@
 
 This Node.js application has the following prerequisites:
 
+
 1. You have an IBM Bluemix account (using Cloud Foundry)
 2. You have a Sparkpost.com account
 3. You have configured a [verified Sending Domain in SparkPost.com](https://support.sparkpost.com/customer/portal/articles/1933318-creating-sending-domains)
 4. You have a valid SparkPost API Key with READ/WRITE permissions for Transmissions
 5. You have Node.js installed locally and NPM
+
 
 ## Clone the repository
 
@@ -24,8 +26,12 @@ This Node.js application has the following prerequisites:
 * package.json
 	- Change the name to be what you wantd
 
+## Install the dependencies
+```npm install```
+
 ## Test locally
 ```node app```
+
 Open in browser per URL in Node standard out
 
 ## DEPLOY APP TO IBM Bluemix using Cloud Foundry, follow directions for [IBM Bluemix](https://www.ng.bluemix.net/docs)
